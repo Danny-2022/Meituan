@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+              android:layout_centerInParent="true"
+                android:background="@drawable/slide"
+                android:layout_width="160dp"
+                android:layout_height="160dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/add_image_shu_one"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/ed_shu_leibie"
+            android:background="@null"
+            android:textSize="26dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/ed_shu_title"
+            android:background="@null"
+            android:textSize="26dp"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:gravity="start"
+            android:maxLines="6"
+            android:id="@+id/ed_shu_content"
+            android:background="@drawable/edittext_bg"
+            android:textSize="18dp"
+            android:hint="Please input food introduction"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="26dp"
+                android:gravity="center|right"
+                android:text="10"
+                android:id="@+id/tv_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_toLeftOf="@+id/num"
+                android:id="@+id/sp_remove"
+                android:layout_gravity="center|right"
+                android:background="@drawable/remove"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="num"
+                android:textSize="12dp" />
+            <ImageButton
+                android:layout_toRightOf="@+id/num"
+                android:id="@+id/sp_add"
+                android:layout_gravity="center|right"
+                android:background="@drawable/add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_add_food"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/listviewbg"
+        android:text="Add menu">
+
+    </Button>
+</RelativeLayout>
